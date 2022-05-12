@@ -1,0 +1,54 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.3fr 3fr;
+    grid-template-areas:
+    "nav nav"
+    "aside main"
+    "footer footer";
+    height: 5vh;
+}
+
+nav {
+    display: flex;
+    grid-area: nav;
+    background-color: azure;
+    justify-content: center;
+    height: 5vh;
+}
+
+aside {
+    grid-area: aside;
+background-color: aqua;
+}
+
+aside a{
+    text-decoration: none;
+    color: #201f1e;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    list-style: none;         
+}
+h3 {
+text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-area: main;
+  background-color: #efead8;
+  gap: 10px;
+}
+
+.card img{
+    width: 100%;
+}
